@@ -1,12 +1,15 @@
 const display = document.getElementById("display");
 
+
 function appendToDisplay(input) {
   display.value += input;
 }
 
+
 function clearDisplay() {
   display.value = "";
 }
+
 
 function calculate() {
   try {
@@ -17,9 +20,11 @@ function calculate() {
   }
 }
 
+
 function negative() {
   display.value = -1 * display.value;
 }
+
 
 function percentage() {
   display.value = display.value / 100;
@@ -30,11 +35,13 @@ function del() {
   input.value = input.value.substring(0, input.value.length - 1);
 }
 
+
 function square() {
   if (display.value) {
     display.value = Math.pow(display.value, 2);
   }
 }
+
 
 function cube() {
     if (display.value) {
@@ -42,11 +49,13 @@ function cube() {
     }
   }
 
+
 function squareRoot() {
   if (display.value) {
     display.value = Math.sqrt(display.value);
   }
 }
+
 
 function cubeRoot() {
   if (display.value) {
